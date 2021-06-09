@@ -1,0 +1,12 @@
+main{
+    grid-area: main;
+    .message-window{
+        border: solid 2px;
+        height: 20em;
+    }
+}
+
+footer{
+    grid-area: foot;
+}
+

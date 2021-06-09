@@ -1,0 +1,21 @@
+*{
+     margin: 0%;
+     box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(141, 221, 235);
+}
+.container{
+    max-width: 1000px;
+    height: 35em;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin:7em auto;
+    // display: grid;
+    // grid-template-columns: 1fr  ;
+    // grid-template-areas:'header header header'
+    //                     'nav main main'
+    //                     'nav main main'
+    //                     'nav footer footer ';
+}

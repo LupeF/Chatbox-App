@@ -1,0 +1,13 @@
+
+.message-bar{
+    position: relative;
+    input{
+        height:3em;
+        width: 100%;
+    }
+    button{
+        position: absolute;
+        right: 1em;
+        top: .7em;
+    }
+}
