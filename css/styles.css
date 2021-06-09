@@ -1,5 +1,96 @@
+header {
+  background-color: #78828c;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  height: 3.5em;
+  grid-area: header;
+}
+header .color-circles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 8%;
+  margin: 0.5em;
+}
+header .left {
+  background-color: #ff8a8A;
+}
+header .middle {
+  background-color: #E5C46E;
+}
+header .right {
+  background-color: #98DEC5;
+}
+header .left,
+header .middle,
+header .right {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+header .online-status {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  margin-right: 1em;
+  color: white;
+}
+header .online-color {
+  background-color: #94F6D3;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+header .arrow {
+  padding-bottom: 8px;
+}
+
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aqua;
+  background-color: #8dddeb;
+}
+
+.container {
+  max-width: 1000px;
+  height: 35em;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 7em auto;
+}
+
+nav {
+  border: solid 2px;
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+main .message-window {
+  border: solid 2px;
+  height: 20em;
+}
+
+footer {
+  grid-area: foot;
+}
+
+.message-bar {
+  position: relative;
+}
+.message-bar input {
+  height: 3em;
+  width: 100%;
+}
+.message-bar button {
+  position: absolute;
+  right: 1em;
+  top: 0.7em;
 }
 
 /*# sourceMappingURL=styles.css.map */
