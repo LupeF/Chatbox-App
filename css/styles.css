@@ -72,7 +72,9 @@ nav {
   border: solid 2px;
   background-color: white;
   grid-area: nav;
-  margin: 0 0 1em 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  padding-right: 2em;
   border: none;
   text-align: center;
   font-size: small;
@@ -81,21 +83,50 @@ nav h2 {
   margin-top: 0.5em;
   padding-left: 1em;
 }
-nav ul {
+nav ul li {
   list-style-type: none;
-  margin-right: 1em;
-}
-nav li {
   border: solid 1px;
   padding: 3px;
   border-radius: 10px;
   margin: 0.5em;
   background-color: lightgray;
+  display: grid;
+  grid-template-columns: 10px auto;
+}
+nav ul .online {
+  background-color: #94f6d3;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding-right: 1em;
+  margin-left: 8px;
+}
+nav ul .standby {
+  background-color: #fcd7a1;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding-right: 1em;
+  margin-left: 8px;
+}
+nav ul .offline {
+  background-color: #cfd8d4;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding-right: 1em;
+  margin-left: 8px;
 }
 nav .line {
-  border: solid 1px gray;
+  border-bottom: solid 3px black;
   width: 25%;
-  margin: 2em auto;
+  margin: 1.5em auto;
 }
 
 main {
@@ -108,13 +139,13 @@ main {
 footer {
   grid-area: footer;
   width: 98%;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 footer .message-bar {
   position: relative;
 }
 footer .message-bar input {
-  height: 3em;
+  height: 4em;
   width: 100%;
   outline: none;
   border: none;
@@ -122,10 +153,12 @@ footer .message-bar input {
 footer .message-bar button {
   position: absolute;
   right: 1em;
-  top: 0.7em;
+  top: 0.4em;
   background: #75e0c0;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 1em;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,10 @@ nav{
     border: solid 2px;
     background-color: white;
     grid-area:nav ;
-    margin: 0 0 1em 1em;
+    // margin: 0 0 1em 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-right: 2em;
     border: none;
     text-align: center;
     font-size: small;
@@ -11,21 +14,56 @@ nav{
         padding-left: 1em;
     }
     ul{
-        list-style-type: none;
-        margin-right: 1em;
+        // list-style-type: none;
+        // margin-right: 1em;
+       
+        li{
+            list-style-type: none;
+            border: solid 1px;
+            padding: 3px;
+            border-radius: 10px;
+            margin:.5em;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: 10px auto;  
+        }
+        .online{
+            background-color: #94f6d3;
+            border: 1px solid;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            padding-right: 1em;
+            margin-left: 8px;
+        }
+        .standby{
+            background-color: #fcd7a1;
+            border: 1px solid;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            padding-right: 1em;
+            margin-left: 8px;
+        }
+        .offline{
+            background-color: #cfd8d4;
+            border: 1px solid;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            padding-right: 1em;
+            margin-left: 8px;
+        }
     }
-    li{
-        border: solid 1px;
-        padding: 3px;
-        border-radius: 10px;
-        margin:.5em;
-        background-color: lightgray;
-        
-    }
+    
     .line{
-        border: solid 1px gray;
+        border-bottom: solid 3px black;
         width: 25%;
-        margin: 2em auto;
+        margin: 1.5em auto;
+        
 
     }
 }
