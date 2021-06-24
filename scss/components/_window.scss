@@ -1,12 +1,9 @@
 main{
+    background-color: white;
     grid-area: main;
-    .message-window{
-        border: solid 2px;
-        height: 20em;
-    }
+    height: 25em;
+    width: 98%;
 }
 
-footer{
-    grid-area: foot;
-}
+
 

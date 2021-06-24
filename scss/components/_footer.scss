@@ -1,13 +1,26 @@
-
-.message-bar{
-    position: relative;
-    input{
-        height:3em;
-        width: 100%;
-    }
-    button{
-        position: absolute;
-        right: 1em;
-        top: .7em;
+footer{
+    grid-area: footer;
+    width: 98%;
+    margin-bottom: 1em;
+   
+    .message-bar{
+        position: relative;
+        input{
+            height:3em;
+            width: 100%;
+            outline: none;
+            border: none;
+        
+        }
+        button{
+            position: absolute;
+            right: 1em;
+            top: .7em;
+            background:  #75e0c0; 
+            color: white;
+            border-radius: 5px;
+       
+        }
     }
 }
+

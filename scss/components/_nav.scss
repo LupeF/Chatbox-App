@@ -1,4 +1,31 @@
 nav{
     border: solid 2px;
+    background-color: white;
     grid-area:nav ;
+    margin: 0 0 1em 1em;
+    border: none;
+    text-align: center;
+    font-size: small;
+    h2{
+        margin-top: .5em;
+        padding-left: 1em;
+    }
+    ul{
+        list-style-type: none;
+        margin-right: 1em;
+    }
+    li{
+        border: solid 1px;
+        padding: 3px;
+        border-radius: 10px;
+        margin:.5em;
+        background-color: lightgray;
+        
+    }
+    .line{
+        border: solid 1px gray;
+        width: 25%;
+        margin: 2em auto;
+
+    }
 }
