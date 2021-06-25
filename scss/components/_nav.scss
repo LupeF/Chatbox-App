@@ -2,30 +2,30 @@ nav{
     border: solid 2px;
     background-color: white;
     grid-area:nav ;
-    // margin: 0 0 1em 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;
+    margin: 0 0 1em 1em;
     padding-right: 2em;
     border: none;
     text-align: center;
     font-size: small;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     h2{
         margin-top: .5em;
         padding-left: 1em;
     }
     ul{
-        // list-style-type: none;
-        // margin-right: 1em;
-       
         li{
             list-style-type: none;
             border: solid 1px;
             padding: 3px;
             border-radius: 10px;
             margin:.5em;
-            background-color: lightgray;
+            background-color: rgb(240, 240, 240);
             display: grid;
-            grid-template-columns: 10px auto;  
+            grid-template-columns: 10px auto;
+            &:hover{
+                cursor: pointer;
+            }
+              
         }
         .online{
             background-color: #94f6d3;
@@ -63,7 +63,5 @@ nav{
         border-bottom: solid 3px black;
         width: 25%;
         margin: 1.5em auto;
-        
-
     }
 }
