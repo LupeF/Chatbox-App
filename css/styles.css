@@ -138,6 +138,18 @@ main {
   height: 25em;
   width: 98%;
 }
+main .messages-container {
+  background-color: #3434fe;
+  color: white;
+  width: min-content;
+  border: solid 2px black;
+  border-radius: 100px;
+  margin: 0.5em 0.5em 0.5em auto;
+}
+main .messages-container p {
+  padding: 1em;
+  border-radius: 20px;
+}
 
 footer {
   grid-area: footer;
@@ -148,20 +160,22 @@ footer .message-bar {
   position: relative;
 }
 footer .message-bar input {
-  height: 4em;
+  height: 2.5em;
   width: 100%;
   outline: none;
   border: none;
+  padding-left: 1em;
+  font-size: large;
 }
 footer .message-bar button {
   position: absolute;
-  right: 1em;
-  top: 0.4em;
+  transform: translate(-60px, -6px);
   background: #75e0c0;
   color: white;
   border-radius: 10px;
   padding: 1em;
   border: none;
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

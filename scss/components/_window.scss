@@ -3,6 +3,19 @@ main{
     grid-area: main;
     height: 25em;
     width: 98%;
+    .messages-container{
+        background-color: rgb(52, 52, 254);
+        color: white;
+        width: min-content;
+        border: solid 2px black;
+        border-radius: 100px;
+        margin: .5em .5em .5em auto;
+        p{
+            padding: 1em;
+            border-radius: 20px;
+        }
+    }
+    
 }
 
 
