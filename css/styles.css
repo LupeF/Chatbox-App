@@ -149,7 +149,8 @@ main .selected-name {
 main .messages-container {
   background-color: #3434fe;
   color: white;
-  width: min-content;
+  width: fit-content;
+  text-align: right;
   border: solid 2px black;
   border-radius: 40px;
   border-width: 2px 4px;
