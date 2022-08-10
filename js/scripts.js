@@ -2,18 +2,28 @@ const messageWindow = document.querySelector('.message-window');
 const message = document.getElementById('input');
 const button = document.getElementById('button');
 const nameDiv = document.getElementById('name-container');
-const li = document.querySelectorAll('li');
+// const li = document.querySelectorAll('li');
+const ul = document.querySelectorAll('ul');
+
 //************************************* */
 // Assigns event listeners to li elements
 //************************************* */
-for(let i=0; i<li.length; i++){
-    li[i].addEventListener('click', () => {
-       nameDiv.classList.add('selected-name'); 
-       nameDiv.innerHTML = `
-        <h1>${li[i].textContent}</h1>
-       `
-    })
-};
+// for(let i=0; i<li.length; i++){
+//     li[i].addEventListener('click', () => {
+//        nameDiv.classList.add('selected-name'); 
+//        nameDiv.innerHTML = `
+//         <h1>${li[i].textContent}</h1>
+//         `
+//     })
+// };
+
+ul.addEventListener('click', (e) => {
+    if(e.target.tagName === "LI")
+    nameDiv.classList.add('selected-name');
+    nameDiv.innerHTML = `
+        <h1>${e.target.textContent}</h1>
+    ` 
+})
 //**************************************************/
 // Creates Element and Appends Messages To The Window And Clears Input Field
 //*************************************************/
@@ -31,5 +41,4 @@ button.addEventListener('click', () => {
         `
     message.value = "";
     }
-    
 });
