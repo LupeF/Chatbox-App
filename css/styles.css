@@ -138,6 +138,7 @@ main {
   grid-area: main;
   height: 25em;
   width: 98%;
+  overflow: scroll;
 }
 main .selected-name {
   display: flex;

@@ -1,0 +1,5 @@
+@mixin center-styles ($align-items:null) {
+    display: flex;
+    justify-content: center;
+    align-items: $align-items;
+}

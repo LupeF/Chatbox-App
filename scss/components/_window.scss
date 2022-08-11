@@ -1,14 +1,14 @@
 main{
-    background-color: white;
+    background-color: $window-col;
     grid-area: main;
     height: 25em;
     width: 98%;
+    overflow: scroll;
     .selected-name{
-        display: flex;
-        justify-content: center;
+        @include center-styles;
         padding: .5em 0 .5em;
         border-bottom: solid 2px black;
-        background-color: rgb(37, 144, 238);
+        background-color: $name-bck-col;
         color: white;
     }
     .messages-container{
