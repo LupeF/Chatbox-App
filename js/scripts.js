@@ -4,7 +4,6 @@ const button = document.getElementById('button');
 const nameDiv = document.getElementById('name-container');
 // const li = document.querySelectorAll('li');
 const nav = document.querySelector('nav');
-const ul = document.querySelectorAll('ul');
 
 //************************************* */
 // Assigns event listeners to li elements
