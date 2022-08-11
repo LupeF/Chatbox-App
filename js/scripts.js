@@ -3,6 +3,7 @@ const message = document.getElementById('input');
 const button = document.getElementById('button');
 const nameDiv = document.getElementById('name-container');
 // const li = document.querySelectorAll('li');
+const nav = document.querySelector('nav');
 const ul = document.querySelectorAll('ul');
 
 //************************************* */
@@ -17,7 +18,7 @@ const ul = document.querySelectorAll('ul');
 //     })
 // };
 
-ul.addEventListener('click', (e) => {
+nav.addEventListener('click', (e) => {
     if(e.target.tagName === "LI")
     nameDiv.classList.add('selected-name');
     nameDiv.innerHTML = `
